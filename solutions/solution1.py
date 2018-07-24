@@ -21,3 +21,16 @@ class Solution1:
                col -= 1
        return False
 
+
+"""
+Another Solution
+
+    def find(self, target, array):
+        flag = False
+        for index in range(len(array)):
+            if target in array[index]:
+                flag = True
+        return flag
+
+"""
+
