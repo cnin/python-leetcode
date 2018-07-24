@@ -6,31 +6,26 @@
 时间限制：1秒 空间限制：32768K
 """
 
-class Solution1:
-   def find(self, target, array):
-       nrow = len(array)
-       ncol = len(array[0])
-       row = 0
-       col = ncol-1
-       while row<nrow and col>=0:
-           if target == array[row][col]:
-               return True
-           elif target > array[row][col]:
-               row += 1
-           else:
-               col -= 1
-       return False
-
-
-"""
-Another Solution
-
+class Solution1(object):
     def find(self, target, array):
+        nrow = len(array)
+        ncol = len(array[0])
+        row = 0
+        col = ncol-1
+        while row<nrow and col>=0:
+            if target == array[row][col]:
+                return True
+            elif target > array[row][col]:
+                row += 1
+            else:
+                col -= 1
+        return False
+
+    def find_alter(self, target, array):
         flag = False
         for index in range(len(array)):
             if target in array[index]:
                 flag = True
         return flag
 
-"""
 

@@ -17,6 +17,14 @@ class TestSolution1(ut.TestCase):
     def test_find_true(self):
         target = 9
         self.assertTrue(self.s.find(target, self.array))
+    
+    def test_find_false_alter(self):
+        target = 7
+        self.assertEqual(self.s.find_alter(target, self.array), False)
+
+    def test_find_true_alter(self):
+        target = 9
+        self.assertTrue(self.s.find_alter(target, self.array))
 
     
 if __name__ == '__main__':
