@@ -1,6 +1,7 @@
 import sys
 import unittest as ut
 
+sys.path.append('.') 
 sys.path.append('..') 
 from solutions import Solution3
 from linked_list import LinkedList
