@@ -1,7 +1,7 @@
 #coding=utf8
 #ref: https://www.cnblogs.com/king-ding/p/pythonchaintable.html
 
-from node import Node
+from .node import Node
 
 class LinkedList(object):
     def __init__(self):
