@@ -4,7 +4,7 @@ import unittest as ut
 sys.path.append('.') 
 sys.path.append('..') 
 from solutions import Solution3
-from linked_list import LinkedList
+from impl import LinkedList
 
 class TestSolution3(ut.TestCase):
     
